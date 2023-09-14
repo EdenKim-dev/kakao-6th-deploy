@@ -18,3 +18,4 @@ spec:
               servicePort: 80
               # 여러분의 app path 를 넣어주세요.
               path: /k6e90852ea92da(/|$)(.*)
+            pathType: Prefix
