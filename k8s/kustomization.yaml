@@ -14,7 +14,7 @@ spec:
     - http:
         paths:
           - backend:
-              serviceName: frontend-service
-              servicePort: 80
+              serviceName: backend
+              servicePort: 8080
               # 여러분의 app path 를 넣어주세요.
               path: /k6e90852ea92da(/|$)(.*)
