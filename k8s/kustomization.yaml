@@ -3,3 +3,19 @@ namespace: default
 resources:
   - backend.yaml
 
+---
+
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: krampoline
+  namespace: default
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: frontend-service
+              servicePort: 80
+              # 여러분의 app path 를 넣어주세요.
+              path: /k6e90852ea92da(/|$)(.*)
