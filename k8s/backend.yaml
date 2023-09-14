@@ -8,6 +8,9 @@ metadata:
       app: backend
 
 spec:
+  selector:
+    matchLabels:
+      app: backend
   template:
     metadata:
       labels:
